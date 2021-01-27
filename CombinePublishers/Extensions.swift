@@ -2,10 +2,11 @@
 //  Extensions.swift
 //  CombinePublishers
 //
-//  Created by Nazario Mariano Jr. on 1/6/21.
+//  Created by naz on 1/6/21.
 //
 
 import UIKit
+import Combine
 
 extension CGFloat {
     static func random() -> CGFloat {
@@ -22,4 +23,14 @@ extension UIColor {
            alpha: 1.0
         )
     }
+}
+
+extension UITextField {
+    var textPublisher: AnyPublisher<String, Never> {
+            NotificationCenter.default
+                .publisher(for: UITextField.textDidChangeNotification, object: self)
+                .compactMap { $0.object as? UITextField }
+                .map { $0.text ?? "" }
+                .eraseToAnyPublisher()
+        }
 }

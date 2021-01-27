@@ -51,7 +51,7 @@ class JustPublisherViewController: UIViewController {
     }
 
     func getTodos() -> AnyPublisher<[Todo], Never> {
-        let todoURL = URL(string: "https://jsonplaceholder.typicode.com/todos")
+        let todoURL = URL(string: "https://jsonplaceholder.typicode.com/posts")
 
         let todosPublisher = URLSession.shared.dataTaskPublisher(for: todoURL!)
             .map{ $0.data }

@@ -16,11 +16,11 @@ struct PublisherItem {
 class PublishersTableViewController: UITableViewController {
     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let cellIdentifier = "Cell"
-    var publishers = [PublisherItem(name: "Multicast", segue: "multicast"), PublisherItem(name: "Futures", segue: "future"),PublisherItem(name: "Just", segue: "", viewController: JustPublisherViewController.self), PublisherItem(name: "@Published", segue: "atpublished")]
+    var publishers = [PublisherItem(name: "Multicast", segue: "multicast"), PublisherItem(name: "Futures", segue: "future"),PublisherItem(name: "Just", segue: "", viewController: JustPublisherViewController.self), PublisherItem(name: "@Published", segue: "atpublished"), PublisherItem(name: "FlatMap", segue: "", viewController: FlatMapViewController.self), PublisherItem(name: "Map", segue: "", viewController: MapViewController.self)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Publishers"
+        title = "Combine"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
 

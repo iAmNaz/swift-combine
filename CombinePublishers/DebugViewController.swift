@@ -2,7 +2,7 @@
 //  DebugViewController.swift
 //  CombinePublishers
 //
-//  Created by Nazario Mariano Jr. on 1/9/21.
+//  Created by naz on 1/9/21.
 //
 
 import UIKit

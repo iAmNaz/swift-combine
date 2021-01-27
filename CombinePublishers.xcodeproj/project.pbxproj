@@ -19,6 +19,8 @@
 		45F1593825A421150087E17E /* PublishersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F1593725A421150087E17E /* PublishersTableViewController.swift */; };
 		45F1594025A4214A0087E17E /* JustPublisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F1593F25A4214A0087E17E /* JustPublisherViewController.swift */; };
 		45F1594525A4263E0087E17E /* FuturePublisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F1594425A4263E0087E17E /* FuturePublisherViewController.swift */; };
+		45F80FDA25BD555600F1F761 /* FlatMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80FD925BD555600F1F761 /* FlatMapViewController.swift */; };
+		45F80FE125BD5A1300F1F761 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F80FE025BD5A1300F1F761 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		45F1593725A421150087E17E /* PublishersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersTableViewController.swift; sourceTree = "<group>"; };
 		45F1593F25A4214A0087E17E /* JustPublisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPublisherViewController.swift; sourceTree = "<group>"; };
 		45F1594425A4263E0087E17E /* FuturePublisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturePublisherViewController.swift; sourceTree = "<group>"; };
+		45F80FD925BD555600F1F761 /* FlatMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapViewController.swift; sourceTree = "<group>"; };
+		45F80FE025BD5A1300F1F761 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				457BA4AB25A1ED6100A98175 /* SceneDelegate.swift */,
 				45F1593725A421150087E17E /* PublishersTableViewController.swift */,
 				45F1593F25A4214A0087E17E /* JustPublisherViewController.swift */,
+				45F80FD925BD555600F1F761 /* FlatMapViewController.swift */,
+				45F80FE025BD5A1300F1F761 /* MapViewController.swift */,
 				45F1594425A4263E0087E17E /* FuturePublisherViewController.swift */,
 				4520CAC625A573C4002C438A /* PublishedPublisherViewController.swift */,
 				4500C8F725A7205800C42C83 /* MulticasPublisherViewController.swift */,
@@ -155,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F80FE125BD5A1300F1F761 /* MapViewController.swift in Sources */,
 				457ABE2F25A9FE3000C17A77 /* DebugViewController.swift in Sources */,
 				4520CAC725A573C4002C438A /* PublishedPublisherViewController.swift in Sources */,
 				457BA4AA25A1ED6100A98175 /* AppDelegate.swift in Sources */,
+				45F80FDA25BD555600F1F761 /* FlatMapViewController.swift in Sources */,
 				457BA4AC25A1ED6100A98175 /* SceneDelegate.swift in Sources */,
 				45F1593825A421150087E17E /* PublishersTableViewController.swift in Sources */,
 				45F1594525A4263E0087E17E /* FuturePublisherViewController.swift in Sources */,
@@ -313,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22QJGKKNX4;
 				INFOPLIST_FILE = CombinePublishers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22QJGKKNX4;
 				INFOPLIST_FILE = CombinePublishers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
